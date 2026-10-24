@@ -1,0 +1,9 @@
+.t-dashboard { max-width: 1400px; margin: 0 auto; padding-block: var(--space-6); padding-inline: max(16px, var(--space-6)); }
+.t-dashboard__header { display: grid; gap: var(--space-1); margin-bottom: var(--space-6); }
+.t-dashboard__body { display: grid; grid-template-columns: 20rem minmax(0, 1fr); gap: var(--space-6); align-items: start; }
+.t-dashboard__main { display: grid; gap: var(--space-4); min-width: 0; }
+.p-home__empty { display: grid; place-items: center; min-height: 16rem; border: 1px dashed var(--border); border-radius: var(--radius-md); }
+
+@media (max-width: 860px) {
+  .t-dashboard__body { grid-template-columns: 1fr; }
+}

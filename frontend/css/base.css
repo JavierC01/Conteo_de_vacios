@@ -1,0 +1,9 @@
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  margin: 0;
+  font: 14px/1.5 var(--font);
+  color: var(--text-primary);
+  background: var(--surface-0);
+}
+img { max-width: 100%; }

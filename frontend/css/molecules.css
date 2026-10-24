@@ -1,0 +1,55 @@
+/* ---- Form field ---- */
+.m-form-field { display: grid; gap: var(--space-1); }
+.m-form-field__output { font-variant-numeric: tabular-nums; color: var(--text-primary); }
+
+/* ---- Dropzone ---- */
+.m-dropzone {
+  display: grid;
+  place-items: center;
+  min-height: 7rem;
+  padding: var(--space-4);
+  text-align: center;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-1);
+  cursor: pointer;
+}
+.m-dropzone.is-over { border-color: var(--accent); background: var(--surface-2); }
+.m-dropzone.is-filled { border-style: solid; }
+.m-dropzone.is-filled .a-text { color: var(--text-primary); word-break: break-all; }
+.m-dropzone__input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+
+/* ---- Stat card ---- */
+.m-stat {
+  display: grid;
+  gap: 2px;
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+.m-stat__label { font-size: 0.8rem; color: var(--text-secondary); }
+.m-stat__value { font-size: 1.5rem; font-weight: 700; }
+.m-stat__hint { font-size: 0.8rem; color: var(--text-muted); }
+
+/* ---- Pagination ---- */
+.m-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-2); margin-top: var(--space-3); }
+.m-pagination__status { color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+
+/* ---- Segmented control ---- */
+.m-segmented { display: inline-flex; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+.m-segmented__item {
+  font: inherit;
+  padding: var(--space-1) var(--space-3);
+  border: 0;
+  background: var(--surface-1);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.m-segmented__item + .m-segmented__item { border-left: 1px solid var(--border); }
+.m-segmented__item[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+
+/* ---- Legend item ---- */
+.m-legend-item { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--text-secondary); font-size: 0.85rem; }
+.m-legend-item__swatch { width: 12px; height: 12px; border-radius: 3px; }
+.m-legend-item__swatch.is-void { background: var(--void); }
